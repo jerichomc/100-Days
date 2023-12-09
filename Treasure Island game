@@ -1,0 +1,42 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+
+choice1 = input("You have been offered a job as a pirate captain. Do you accept or do you deny the offer? Y/N\n").lower()
+if choice1 == "n":
+  print("You spend the rest of your days as a janitor of a nearby tavern, and you die of dysentary for good measure.\n The End.")
+else:
+  print("Your journey aboard the ship takes you to 3 islands. One holds a treasure of unspeakable value.\n The other 2 lead to a most assured doom")
+  choice2 = input("Which island do you choose: The island on the Right, the island in the Middle, or the island on the Left:\n Type:right, middle, or left \n").lower()
+  if choice2 == "middle":
+    print("Your boat gets hit with a massive whirlpool while sailing to the island.\n Your boat sinks and you sppend the rest of time in Davy Jones' Locker.\n The End.")
+  elif choice2 == "right":
+    print("You make it onto the island. The island is abundant with natural beauty.\n But unfortunately you are not alone...\n You are hit with a dart in your neck and you wake up over a roasting spit. You are now dinner for a tribe of cannibals.\n The End.")
+  else:
+    choice3 = input("You make it to the island. Your map has an X on a spot with a waterfall.\n You see the waterfall it metions. 'The treasure must be here' you think to yourself. But where?\n Do you check behind the waterfall or swim to the bottom of the lake at the bottom of the waterfall?\n Type: look or swim \n").lower()
+    if choice3 == "swim":
+      print("Lookinng around underwater you see something glowing. you slowly swim towards it.\n When you reach the glowing object it juts out and grabs you. A hand with a shiny ring on its finger pulls you under and you drown.\n The End.")
+    else:
+      print("You make your way to a cave behind the waterfall.\n The cave goes very deep down, maybe a mile or 2. After a long trek you finally make it. A note left behind by the old Captain Iron Jaw.\n The note reads: 'ARRRR Yee found me treasure! I'm sure I've kicked the bucket by now so it's yours fir the taking!\n You found the treasure! You Win!")
